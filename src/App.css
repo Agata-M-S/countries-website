@@ -5,36 +5,69 @@
 	text-align: center;
 }
 h2 {
-  color: rgb(103, 220, 101);
+	color: rgb(103, 220, 101);
 }
-h1{
-  color: rgb(200, 108, 38);
-  text-shadow:-1px 1px 0px rgb(184, 186, 201), 1px -1px 0px rgb(23, 26, 40), 0px -5px 10px rgb(3, 5, 35) ;
-  letter-spacing: 3px;
+h1 {
+	margin: 0 auto 20px auto;
+	color: rgb(200, 108, 38);
+	text-shadow: -1px 1px 0px rgb(184, 186, 201), 1px -1px 0px rgb(23, 26, 40),
+		0px -5px 10px rgb(3, 5, 35);
+	letter-spacing: 3px;
 }
 body {
-	background:linear-gradient(90deg, rgba(17,106,190,1) 0%, rgba(11,29,82,1) 25%, rgba(11,29,82,1) 50%, rgba(11,29,82,1) 75%, rgba(17,106,190,1) 100%);
-
-
+	background: linear-gradient(
+		90deg,
+		rgba(17, 106, 190, 1) 0%,
+		rgba(11, 29, 82, 1) 25%,
+		rgba(11, 29, 82, 1) 50%,
+		rgba(11, 29, 82, 1) 75%,
+		rgba(17, 106, 190, 1) 100%
+	);
+	min-height: 100vh;
 }
 button {
 	padding: 7px;
 	width: 35vw;
-  background-color: rgb(49, 68, 128);
-  border-radius: 5px;
-  border:  none;
-  box-shadow:  7px 3px 10px  rgb(4, 8, 41);
- 
-
+	background-color: rgb(49, 68, 128);
+	border-radius: 5px;
+	border: none;
+	box-shadow: 7px 3px 10px rgb(4, 8, 41);
 }
-button:hover{
-  color: rgb(103, 220, 101);
-  box-shadow: 1px 1px 5px white;
+button:hover,
+.paginate > li:hover:not(.paginate > li.break) {
+	color: rgb(103, 220, 101);
+	box-shadow: 1px 1px 5px white;
+	cursor: pointer;
 }
 
 .btn-div {
 	display: flex;
 	justify-content: space-around;
 	padding: 10px;
-	/* border: 1px solid white; */
+}
+.paginate {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+	margin: 0 20vw;
+	padding: 10px;
+	min-width: fit-content;
+}
+.paginate
+	> li:not(.paginate > li.break, .paginate > li.previous, .paginate > li.next) {
+	background-color: rgba(3, 3, 50, 0.223);
+}
+.paginate > li {
+	border-radius: 100%;
+	padding: 6px;
+}
+
+.countries-list>h3{
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.countries-list>ul>li{
+  list-style: none;
 }
