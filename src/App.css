@@ -1,6 +1,40 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+h2 {
+  color: rgb(103, 220, 101);
+}
+h1{
+  color: rgb(200, 108, 38);
+  text-shadow:-1px 1px 0px rgb(184, 186, 201), 1px -1px 0px rgb(23, 26, 40), 0px -5px 10px rgb(3, 5, 35) ;
+  letter-spacing: 3px;
+}
+body {
+	background:linear-gradient(90deg, rgba(17,106,190,1) 0%, rgba(11,29,82,1) 25%, rgba(11,29,82,1) 50%, rgba(11,29,82,1) 75%, rgba(17,106,190,1) 100%);
+
+
+}
+button {
+	padding: 7px;
+	width: 35vw;
+  background-color: rgb(49, 68, 128);
+  border-radius: 5px;
+  border:  none;
+  box-shadow:  7px 3px 10px  rgb(4, 8, 41);
+ 
+
+}
+button:hover{
+  color: rgb(103, 220, 101);
+  box-shadow: 1px 1px 5px white;
+}
+
+.btn-div {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	/* border: 1px solid white; */
 }
